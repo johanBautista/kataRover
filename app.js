@@ -1,11 +1,22 @@
-// valores del objeto rover
+// valores del objeto rover uno
 var rover1 = {
   direction: "N",
   positionX: 0,
   positionY: 0,
   travelLog: []
 };
-
+var grid =[
+  [null, null, null, "S", null, null, null, null, null, null],
+  [null, null, null, "S", null, null, null, null, null, null ],
+  [null, null, null, null, null, null, null, null, null, "S" ],
+  [null, "S", null, null, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null, null, null, null]
+  [null, null, null, "S", null, null, null, null, null, null],
+  [null, "S", null, "S", null, null, null, null, null, null ],
+  [null, "S", null, null, null, null, null, null, null, "S" ],
+  [null, "S", null, null, null, null, null, null, null, null],
+  [null, null, null, null, "S", null, null, null, null, null]
+];
 //Funcion Left
  function turnLeft(rover){
  switch(rover.direction){
